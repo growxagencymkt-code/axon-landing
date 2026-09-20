@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<style id="gx-boot-inline">header:not(#gxnav){display:none!important}body{padding-top:60px!important}</style>
+<style id="gx-boot-inline">body{padding-top:60px!important}</style>
 <!-- Subdominio AXON: si se entra por axon.* se muestra SOLO la landing de Axon (sin el menú de
      GROWX, con una barra propia). En growxagency.info/axon NO aplica → web normal de GROWX. -->
-<script>if(location.hostname.indexOf('axon.')===0)document.documentElement.classList.add('axon-solo');</script>
+<script>document.documentElement.classList.add('axon-solo');</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Adquirí tu página al instante por 45 dólares mensuales — AXON | GROWX</title>
@@ -257,7 +257,7 @@
 <noscript><style>.rev{opacity:1;transform:none}.paso .pnodo{background:var(--lima);border-color:var(--lima)}.paso .num{color:var(--lima)}.rail .senal{transform:scaleX(1)}</style></noscript>
 </head>
 <body>
-<!-- Barra del subdominio AXON: solo visible en axon.growxagency.info (html.axon-solo). -->
+<!-- Barra principal AXON. -->
 <div id="axon-solo-bar" role="banner">
   <a class="axb-brand" href="#top" aria-label="AXON, software studio">AX<b>O</b>N<em>// Software Studio</em></a>
   <nav class="axb-nav" aria-label="Secciones">
@@ -565,10 +565,9 @@
   if (desktop.addEventListener) desktop.addEventListener('change', aplicarModo); else desktop.addListener(aplicarModo);
   aplicarModo();
 })();
-</script>
-<script src="/gx-auto-update.js" defer></script>
-<script src="/gx-nav.js" defer></script>
+</script>
 </body>
 </html>
+
 
 
