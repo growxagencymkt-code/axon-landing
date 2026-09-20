@@ -171,23 +171,25 @@
   /* ── 2b · TRABAJOS HECHOS ── */
   /* Grilla de 6 columnas con tarjetas de 2: cinco casos → 3 arriba y 2 centrados abajo
      (sin hueco huérfano). A 2 columnas (≤1100 px) es 4 de base, y el quinto queda centrado. */
-  .trabajos-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;list-style:none}
-  .trabajo{grid-column:span 2;background:var(--grafito);border:1px solid var(--linea);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color var(--dur-micro) var(--ease)}
-  .trabajo:hover,.trabajo:focus-within{border-color:rgba(198,242,78,.45)}
-  .trabajo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--linea);background:var(--carbon)}
+  .trabajos-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:28px;list-style:none}
+  .trabajo{grid-column:span 2;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018)),var(--grafito);border:1px solid var(--linea);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 22px 70px rgba(0,0,0,.26);transition:border-color var(--dur-micro) var(--ease),transform var(--dur-micro) var(--ease),box-shadow var(--dur-micro) var(--ease)}
+  .trabajo:hover,.trabajo:focus-within{border-color:rgba(198,242,78,.55);box-shadow:0 30px 90px rgba(0,0,0,.38);transform:translateY(-4px) scale(1.012)}
+  .trabajo img{width:100%;aspect-ratio:16/12;object-fit:contain;object-position:center top;border-bottom:1px solid var(--linea);background:radial-gradient(circle at 50% 0%,rgba(198,242,78,.10),transparent 34%),#08090b;padding:12px;display:block}
   .trabajo .tb{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
   .trabajo h3{font-size:20px}
   .trabajo p{color:var(--ceniza);font-size:15px;flex:1}
   .trabajo .link{font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:15px;color:var(--lima);text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-top:6px}
   .trabajo .link:hover{text-decoration:underline;text-underline-offset:4px}
+  .trabajo:nth-child(1),.trabajo:nth-child(2){grid-column:span 3}
+  .trabajo:nth-child(1) img,.trabajo:nth-child(2) img{aspect-ratio:16/11;padding:14px}
   .trabajo:nth-child(4){grid-column:2/span 2}
   .trabajo:nth-child(5){grid-column:4/span 2}
   @media(max-width:1100px){
     .trabajos-grid{grid-template-columns:repeat(4,1fr)}
-    .trabajo:nth-child(4){grid-column:span 2}
+    .trabajo:nth-child(1),.trabajo:nth-child(2),.trabajo:nth-child(4){grid-column:span 2}
     .trabajo:nth-child(5){grid-column:2/span 2}
   }
-  @media(max-width:760px){.trabajos-grid{grid-template-columns:1fr}.trabajo,.trabajo:nth-child(4),.trabajo:nth-child(5){grid-column:auto}}
+  @media(max-width:760px){.trabajos-grid{grid-template-columns:1fr}.trabajo,.trabajo:nth-child(1),.trabajo:nth-child(2),.trabajo:nth-child(4),.trabajo:nth-child(5){grid-column:auto}.trabajo img,.trabajo:nth-child(1) img,.trabajo:nth-child(2) img{aspect-ratio:16/13;padding:10px}}
 
   /* ── 3 · AFILIADOS (banda grafito) ── */
   .afiliados{background:var(--grafito);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
@@ -568,6 +570,8 @@
 </script>
 </body>
 </html>
+
+
 
 
 
