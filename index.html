@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style id="gx-boot-inline">header:not(#gxnav){display:none!important}body{padding-top:60px!important}</style>
+<!-- Subdominio AXON: si se entra por axon.* se muestra SOLO la landing de Axon (sin el menú de
+     GROWX, con una barra propia). En growxagency.info/axon NO aplica → web normal de GROWX. -->
+<script>if(location.hostname.indexOf('axon.')===0)document.documentElement.classList.add('axon-solo');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Adquirí tu página al instante por 45 dólares mensuales — AXON | GROWX</title>
+<meta name="description" content="Adquirí tu página al instante por 45 dólares mensuales. Mantenimiento, soporte y pago automático por Mercado Pago." />
+<meta name="keywords" content="página web por suscripción, página web mensual, diseño web para comercios, sitio web pymes, AXON software studio, GROWX" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0D0D10" />
+<link rel="canonical" href="https://axonsoftware.com.ar" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="AXON · Software studio" />
+<meta property="og:locale" content="es_AR" />
+<meta property="og:title" content="Adquirí tu página al instante por 45 dólares mensuales" />
+<meta property="og:description" content="Mantenimiento, soporte, pago automático y activación automática por Mercado Pago." />
+<meta property="og:url" content="https://axonsoftware.com.ar" />
+<meta property="og:image" content="https://axonsoftware.com.ar/axon/hero-real-mockups.webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="AXON: adquirí tu página por 45 dólares mensuales." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Adquirí tu página al instante por 45 dólares mensuales — AXON" />
+<meta name="twitter:description" content="Mantenimiento, soporte y pago automático por Mercado Pago." />
+<meta name="twitter:image" content="https://axonsoftware.com.ar/axon/hero-real-mockups.webp" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Página web por suscripción","serviceType":"Diseño, publicación y mantenimiento de páginas web","provider":{"@type":"Organization","name":"AXON · Software studio","url":"https://axonsoftware.com.ar","parentOrganization":{"@type":"Organization","name":"GROWX Agency","url":"https://growxagency.info/"}},"areaServed":"LATAM","description":"Página web por 45 dólares mensuales. Incluye diseño, publicación, mantenimiento, soporte y pago automático por Mercado Pago.","offers":{"@type":"Offer","priceCurrency":"USD","price":"45","priceSpecification":{"@type":"UnitPriceSpecification","price":"45","priceCurrency":"USD","billingIncrement":1,"unitCode":"MON"},"availability":"https://schema.org/InStock","url":"https://axonsoftware.com.ar"}}
+</script>
+<link rel="preload" as="image" href="/axon/hero-real-mockups.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@400;600&family=Chivo+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* ── AXON · landing de suscripción · tokens (dirección de arte NOVA 2026-09-18) ── */
+  :root{
+    --carbon:#0D0D10; --grafito:#181B22; --linea:rgba(242,244,236,.10);
+    --marfil:#F2F4EC; --ceniza:#A9AD9C; --apagado:#7E8273; /* --apagado: 4,92:1 solo sobre carbón; sobre grafito no pasa AA, no usarlo en .afiliados */
+    --lima:#C6F24E; --lima-oscura:#8FCB00; --tinta-sobre-lima:#0D0D10; --growx-cyan:#37B6C7;
+    --dur-micro:200ms; --dur-reveal:560ms; --dur-trazo:900ms; --ease:cubic-bezier(.2,.7,.2,1);
+    --gutter:clamp(16px,4vw,48px);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:auto;overflow-x:clip}
+  body{font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.6;background:var(--carbon);color:var(--marfil);overflow-x:clip;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Poppins',system-ui,sans-serif;text-wrap:balance;hyphens:none}
+  h1{font-weight:700;font-size:clamp(38px,4.6vw,64px);line-height:1.02;letter-spacing:-.03em}
+  h2{font-weight:600;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-.025em}
+  h3{font-weight:600;font-size:24px;line-height:1.2;letter-spacing:-.01em}
+  p{max-width:34rem}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--lima);outline-offset:3px;border-radius:4px}
+  img,svg{display:block;max-width:100%}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  /* grano sutil, a 0,35 para que no se vea sobre las tarjetas grafito */
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:55;opacity:.35;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+
+  .ct{width:min(1200px,100% - 2*var(--gutter));margin:0 auto}
+  section{padding:clamp(80px,10vw,144px) 0;position:relative}
+  .bajada{font-size:clamp(17px,1.3vw,19px);line-height:1.6;color:var(--ceniza)}
+  .nota{font-size:14px;line-height:1.5;color:var(--ceniza)}
+  .sec-head{margin-bottom:clamp(40px,5vw,64px)}
+  .sec-head .bajada{margin-top:16px}
+
+  /* botones */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:16px;line-height:1;border-radius:10px;padding:17px 28px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color var(--dur-micro) var(--ease),border-color var(--dur-micro) var(--ease),box-shadow var(--dur-micro) var(--ease),color var(--dur-micro) var(--ease)}
+  .btn-p{background:var(--lima);color:var(--tinta-sobre-lima);border-color:var(--lima)}
+  .btn-p:hover{background:var(--lima-oscura);border-color:var(--lima-oscura);box-shadow:0 8px 24px rgba(198,242,78,.35)}
+  .btn-o{background:transparent;color:var(--marfil);border-color:rgba(198,242,78,.45)}
+  .btn-o:hover{border-color:var(--lima);color:var(--lima)}
+  .btn-senal{border-bottom:3px solid var(--lima-oscura)} /* la señal cierra el recorrido */
+  .btn-p.btn-senal:hover{border-bottom-color:var(--lima)}
+
+  /* reveal (IntersectionObserver al 20 %; escalonado 60 ms por --i; retardo fijo por --d) */
+  .rev{opacity:0;transform:translateY(16px);transition:opacity var(--dur-reveal) var(--ease),transform var(--dur-reveal) var(--ease);transition-delay:calc(var(--i,0)*60ms + var(--d,0ms))}
+  .rev.in{opacity:1;transform:none}
+
+  /* ── Barra del subdominio AXON (solo html.axon-solo) ── */
+  #axon-solo-bar{display:none}
+  html.axon-solo #gxnav{display:none!important}
+  html.axon-solo #axon-solo-bar{display:flex;position:fixed;top:0;left:0;right:0;z-index:1000;height:60px;align-items:center;gap:20px;padding:0 var(--gutter);background:rgba(13,13,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--linea)}
+  .axb-brand{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:.06em;color:var(--marfil);white-space:nowrap;text-decoration:none}
+  .axb-brand b{color:var(--lima);font-weight:700}
+  .axb-brand em{font-family:'Chivo Mono',ui-monospace,monospace;font-style:normal;font-weight:500;font-size:11px;letter-spacing:.14em;color:var(--ceniza);text-transform:uppercase;margin-left:10px}
+  .axb-nav{display:flex;gap:24px;margin-left:auto}
+  .axb-nav a{font-size:14px;font-weight:600;color:var(--ceniza);text-decoration:none;white-space:nowrap;transition:color var(--dur-micro) var(--ease)}
+  .axb-nav a:hover{color:var(--lima)}
+  .axb-growx{font-size:14px;font-weight:600;color:var(--ceniza);text-decoration:none;white-space:nowrap}
+  .axb-growx:hover{color:var(--marfil)}
+  .axb-cta{padding:10px 16px;font-size:14px;white-space:nowrap}
+  @media(max-width:880px){.axb-nav{display:none}}
+  @media(max-width:520px){.axb-brand em,.axb-growx{display:none}.axb-cta{margin-left:auto}}
+  html.axon-solo #como-funciona,html.axon-solo #afiliados,html.axon-solo #combos,html.axon-solo #contacto{scroll-margin-top:76px}
+  #como-funciona,#afiliados,#combos,#contacto{scroll-margin-top:60px}
+
+  /* ── 1 · HERO ── */
+  .hero{position:relative;padding:clamp(96px,11vw,160px) 0 clamp(64px,8vw,96px);overflow:clip;border-bottom:1px solid var(--linea)}
+  .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--carbon) 0%,rgba(13,13,16,.98) 34%,rgba(13,13,16,.70) 54%,rgba(13,13,16,.08) 72%,transparent 100%)}
+  .hero-pic{position:absolute;left:0;inset-block:0;width:100%;z-index:0;pointer-events:none;opacity:1;transform:translate3d(var(--hero-x,0),var(--hero-y,0),0) scale(var(--hero-scale,1));transform-origin:72% 52%;transition:opacity .4s ease}
+  .hero-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:saturate(.98) contrast(1.05)}
+  .hero .ct{position:relative;z-index:2}
+
+  /* Scroll motion tipo Awwwards: profundidad sin bloquear la usabilidad */
+  .hero .ct{transform:translate3d(0,var(--copy-y,0),0);opacity:var(--copy-o,1)}
+  .trabajo,.combo,.afi-card{transform:translate3d(0,var(--depth-y,0),0) scale(var(--depth-s,1));will-change:transform}
+  .paso{transform:translate3d(0,var(--step-y,0),0)}
+  .hero-txt{max-width:min(640px,52%);margin-left:clamp(24px,5vw,72px);text-align:center}
+  .cifra{display:flex;align-items:baseline;justify-content:center;gap:12px;font-family:'Poppins',system-ui,sans-serif;font-weight:700;line-height:.88;margin-bottom:14px}
+  .cifra b{font-size:clamp(96px,11vw,150px);letter-spacing:-.04em;font-variant-numeric:tabular-nums;font-weight:700}
+  .cifra span{font-size:clamp(18px,1.6vw,24px);font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ceniza);line-height:1}
+  .hero h1{max-width:16ch;margin:0 auto 28px;font-size:clamp(42px,5.2vw,82px);line-height:.94}
+  .hero .bajada{margin:0 auto 32px}
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:32px;list-style:none}
+  .chips li{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;line-height:1;padding:10px 14px;border:1px solid var(--linea);border-radius:999px;color:var(--marfil);background:rgba(13,13,16,.55)}
+  .nodo{width:8px;height:8px;border-radius:50%;background:var(--lima);box-shadow:0 0 12px rgba(198,242,78,.55);flex:none}
+  .hero-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 18px}.hero-cta .nota{flex-basis:100%}
+  @media(max-width:760px){
+    /* la imagen no es fondo: texto sobre carbón puro, imagen como franja 16:9 bajo el CTA */
+    .hero::before{display:none}
+    .hero{padding:88px 0 0}
+    .hero-pic{position:static;display:block;margin-top:8px;width:100%;opacity:1;transform:none}
+    .hero-pic img{aspect-ratio:16/9;height:auto;object-position:50% 50%;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 32%);mask-image:linear-gradient(to bottom,transparent,#000 32%)}
+    .hero-txt{max-width:100%;margin:0;text-align:left}
+    .hero h1{max-width:100%;margin:0 0 16px}
+    .hero-cta{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:12px}
+    .hero-cta .btn{width:100%}
+    .chips{margin-bottom:24px}
+  }
+
+  /* ── 2 · CÓMO FUNCIONA (escena pinned de 260 vh en escritorio) ── */
+  .pin{height:260vh;padding:0}
+  .pin-inner{position:sticky;top:0;min-height:100vh;display:flex;align-items:center;padding:clamp(80px,10vw,120px) 0}
+  .pasos-wrap{position:relative}
+  .pasos{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding-top:32px;list-style:none}
+  .rail{position:absolute;top:8px;left:0;height:1px;background:var(--linea);width:100%;pointer-events:none}
+  .rail .senal{position:absolute;top:-1px;left:0;width:100%;height:3px;border-radius:2px;background:var(--lima);transform:scaleX(0);transform-origin:left center;will-change:transform}
+  .paso{position:relative}
+  .paso .pnodo{position:absolute;top:-30px;left:0;width:12px;height:12px;border-radius:50%;background:var(--grafito);border:1px solid var(--linea);transition:background-color var(--dur-micro) var(--ease),box-shadow var(--dur-micro) var(--ease),border-color var(--dur-micro) var(--ease)}
+  .paso.on .pnodo{background:var(--lima);border-color:var(--lima);box-shadow:0 0 12px rgba(198,242,78,.55)}
+  .paso .num{font-family:'Chivo Mono',ui-monospace,monospace;font-weight:500;font-size:13px;letter-spacing:.08em;color:var(--apagado);margin-bottom:12px;transition:color var(--dur-micro) var(--ease)}
+  .paso.on .num{color:var(--lima)}
+  .paso h3{margin-bottom:10px}
+  .paso p{font-size:16px;color:var(--ceniza)}
+  .incluye{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:clamp(40px,5vw,64px);padding-top:32px;border-top:1px solid var(--linea)}
+  .incluye .lbl{font-family:'Chivo Mono',ui-monospace,monospace;font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--apagado);margin-right:8px}
+  .incluye ul{display:flex;flex-wrap:wrap;gap:12px 28px;list-style:none}
+  .incluye li{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+  .incluye .nota{width:100%;margin-top:8px}
+  @media(max-width:760px),(max-height:820px){
+    .pin{height:auto;padding:clamp(80px,10vw,144px) 0}
+    .pin-inner{position:static;min-height:0;padding:0}
+  }
+  @media(max-width:760px){
+    .pasos{grid-template-columns:1fr;gap:32px;padding-top:0;padding-left:40px}
+    .rail{display:none}
+    .paso .pnodo{top:6px;left:-40px}
+    /* la señal se dibuja por IntersectionObserver al entrar cada paso (segmento vertical, transform) */
+    .paso::before{content:"";position:absolute;left:-35px;top:22px;bottom:-32px;width:1px;background:var(--linea)}
+    .paso::after{content:"";position:absolute;left:-36px;top:22px;bottom:-32px;width:3px;border-radius:2px;background:var(--lima);transform:scaleY(0);transform-origin:top;transition:transform var(--dur-trazo) var(--ease)}
+    .paso.on::after{transform:scaleY(1)}
+    .paso:last-child::before,.paso:last-child::after{display:none}
+    .incluye{gap:12px 20px}
+  }
+
+  /* ── 2b · TRABAJOS HECHOS ── */
+  /* Grilla de 6 columnas con tarjetas de 2: cinco casos → 3 arriba y 2 centrados abajo
+     (sin hueco huérfano). A 2 columnas (≤1100 px) es 4 de base, y el quinto queda centrado. */
+  .trabajos-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;list-style:none}
+  .trabajo{grid-column:span 2;background:var(--grafito);border:1px solid var(--linea);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color var(--dur-micro) var(--ease)}
+  .trabajo:hover,.trabajo:focus-within{border-color:rgba(198,242,78,.45)}
+  .trabajo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--linea);background:var(--carbon)}
+  .trabajo .tb{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .trabajo h3{font-size:20px}
+  .trabajo p{color:var(--ceniza);font-size:15px;flex:1}
+  .trabajo .link{font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:15px;color:var(--lima);text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-top:6px}
+  .trabajo .link:hover{text-decoration:underline;text-underline-offset:4px}
+  .trabajo:nth-child(4){grid-column:2/span 2}
+  .trabajo:nth-child(5){grid-column:4/span 2}
+  @media(max-width:1100px){
+    .trabajos-grid{grid-template-columns:repeat(4,1fr)}
+    .trabajo:nth-child(4){grid-column:span 2}
+    .trabajo:nth-child(5){grid-column:2/span 2}
+  }
+  @media(max-width:760px){.trabajos-grid{grid-template-columns:1fr}.trabajo,.trabajo:nth-child(4),.trabajo:nth-child(5){grid-column:auto}}
+
+  /* ── 3 · AFILIADOS (banda grafito) ── */
+  .afiliados{background:var(--grafito);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+  .afi-top{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:start;margin-bottom:clamp(48px,6vw,80px)}
+  .afi-card{background:var(--carbon);border:1px solid var(--linea);border-radius:16px;padding:32px}
+  .afi-card .cif{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:clamp(48px,5vw,72px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--lima)}
+  .afi-card .cif small{font-size:clamp(18px,1.6vw,24px);font-weight:600;letter-spacing:.04em;color:var(--ceniza);margin-right:10px;vertical-align:baseline}
+  .afi-card .por{margin-top:12px;color:var(--marfil);font-weight:600}
+  .afi-card .niv{margin-top:20px;padding-top:20px;border-top:1px solid var(--linea);color:var(--ceniza);font-size:15px}
+  .afi-card .ej{margin-top:12px;color:var(--ceniza);font-size:15px}
+  .afiliados .pasos{grid-template-columns:repeat(3,1fr)}
+  .afiliados .paso .pnodo{background:var(--carbon)}
+  .afi-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:clamp(40px,5vw,64px)}
+  .afi-cta .nota{max-width:40rem}
+  @media(max-width:900px){.afi-top{grid-template-columns:1fr;gap:32px}}
+  @media(max-width:760px){.afiliados .pasos{grid-template-columns:1fr}.afi-card{padding:24px}.afi-cta .btn{width:100%}}
+
+  /* ── 4 · COMBOS ── */
+  .combos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;list-style:none}
+  .combo{background:var(--grafito);border:1px solid var(--linea);border-radius:16px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;transition:border-color var(--dur-micro) var(--ease)}
+  .combo:hover,.combo:focus-within{border-color:rgba(198,242,78,.45)}
+  .combo .ico{width:64px;height:64px;flex:none}
+  .combo .ico circle.n{transition:filter var(--dur-micro) var(--ease)}
+  .combo h3{font-size:22px}
+  .combo .precio{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:34px;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .combo .precio small{display:block;font-family:'Montserrat',system-ui,sans-serif;font-weight:600;font-size:14px;letter-spacing:0;color:var(--ceniza);margin-top:8px}
+  .combo p{color:var(--ceniza);font-size:15px;flex:1}
+  .combo .link{font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:15px;color:var(--lima);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+  .combo .link:hover{text-decoration:underline;text-underline-offset:4px}
+  .combos .nota{margin-top:24px}
+  @media(max-width:1100px){.combos-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:760px){
+    .combos-grid{grid-template-columns:1fr}
+    .combo{display:grid;grid-template-columns:56px 1fr;grid-template-areas:"ico h" "ico precio" "ico p" "ico link";column-gap:18px;row-gap:10px;padding:24px 20px}
+    .combo .ico{grid-area:ico;width:56px;height:56px}
+    .combo h3{grid-area:h}.combo .precio{grid-area:precio}.combo p{grid-area:p}.combo .link{grid-area:link}
+  }
+
+  /* ── 5 · CTA FINAL / CONTACTO ── */
+  .final{text-align:center;border-top:1px solid var(--linea)}
+  .final .ct{display:flex;flex-direction:column;align-items:center}
+  .final .bajada{margin:16px auto 40px}
+  .final-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 18px;margin-bottom:4px}
+  .final .tel{font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:18px;letter-spacing:.02em;margin-top:20px;color:var(--marfil);text-decoration:none;font-variant-numeric:tabular-nums}
+  .final .tel:hover{color:var(--lima)}
+  .final .afi-link{margin-top:16px;font-size:15px;font-weight:600;color:var(--marfil);text-decoration:underline;text-decoration-color:var(--lima);text-underline-offset:5px;text-decoration-thickness:2px}
+  .final .afi-link:hover{color:var(--lima)}
+  footer{border-top:1px solid var(--linea);padding:32px 0}
+  footer .ct{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;font-size:14px;color:var(--ceniza)}
+  footer .fb{font-family:'Chivo Mono',ui-monospace,monospace;font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ceniza)}
+  footer .fb b{color:var(--lima);font-weight:500}
+  footer nav{display:flex;gap:20px}
+  footer nav a{color:var(--ceniza);text-decoration:none}
+  footer nav a:hover{color:var(--marfil);text-decoration:underline;text-underline-offset:4px}
+  footer .eco{color:var(--ceniza)}
+  footer .eco a{color:var(--growx-cyan);font-weight:600;text-decoration:none}
+  footer .eco a:hover{text-decoration:underline;text-underline-offset:4px}
+  @media(max-width:760px){.final-cta{width:100%;flex-direction:column}.final-cta .btn{width:100%}footer .ct{flex-direction:column;align-items:flex-start}}
+
+  @media(prefers-reduced-motion:reduce){
+    .rev{opacity:1;transform:none;transition:none}
+    .hero-pic,.hero .ct,.trabajo,.combo,.afi-card,.paso{transform:none !important}
+    .paso::after{transition:none}
+    .btn,.combo,.paso .pnodo,.paso .num{transition:none}
+  }
+</style>
+<noscript><style>.rev{opacity:1;transform:none}.paso .pnodo{background:var(--lima);border-color:var(--lima)}.paso .num{color:var(--lima)}.rail .senal{transform:scaleX(1)}</style></noscript>
+</head>
+<body>
+<!-- Barra del subdominio AXON: solo visible en axon.growxagency.info (html.axon-solo). -->
+<div id="axon-solo-bar" role="banner">
+  <a class="axb-brand" href="#top" aria-label="AXON, software studio">AX<b>O</b>N<em>// Software Studio</em></a>
+  <nav class="axb-nav" aria-label="Secciones">
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#afiliados">Afiliados</a>
+    <a href="#combos">Combos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="axb-growx" href="https://growxagency.info/">Ir a GROWX →</a>
+  <a class="btn btn-o axb-cta" href="https://axon.growxagency.info/app/login?next=/billing/checkout">Pagar con Mercado Pago</a>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs><filter id="ax-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+</svg>
+
+<main id="top">
+<!-- ── 1 · HERO: la suscripción ── -->
+<section class="hero" aria-labelledby="h1">
+  <div class="ct">
+    <div class="hero-txt">
+      <h1 id="h1" class="rev" style="--d:120ms">Adquirí tu página al instante por 45 dólares mensuales</h1>
+      <ul class="chips rev" style="--d:240ms" role="list" aria-label="Qué incluye">
+                <li><span class="nodo" aria-hidden="true"></span>Mantenimiento y soporte</li>
+        <li><span class="nodo" aria-hidden="true"></span>Pago automático por Mercado Pago</li>
+        <li><span class="nodo" aria-hidden="true"></span>Activación automática por Mercado Pago</li>
+      </ul>
+      <div class="hero-cta rev" style="--d:240ms">
+        <a class="btn btn-p" href="https://axon.growxagency.info/app/login?next=/billing/checkout">Pagar con Mercado Pago</a>
+        <a class="btn btn-o" href="https://wa.me/5491169799776?text=Hola%2C%20necesito%20ayuda%20para%20activar%20mi%20web%20en%20AXON" target="_blank" rel="noopener">Ayuda por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <!-- imagen de portfolio real: fondo absoluto en escritorio, franja 16:9 bajo el CTA en móvil -->
+  <picture class="hero-pic">
+    <source type="image/webp" srcset="/axon/hero-real-mockups-900.webp 900w, /axon/hero-real-mockups.webp 2688w" sizes="100vw" />
+    <img src="/axon/hero-real-mockups.webp" width="2688" height="1536" alt="" fetchpriority="high" decoding="async" />
+  </picture>
+</section>
+
+<!-- ── 2 · QUÉ INCLUYE / CÓMO FUNCIONA: cuatro pasos ── -->
+<section id="como-funciona" class="pin" aria-labelledby="h2-como">
+  <div class="pin-inner">
+    <div class="ct">
+      <div class="sec-head">
+        <h2 id="h2-como" class="rev" style="--i:1">Cuatro pasos. Después, nos ocupamos nosotros.</h2>
+      </div>
+      <div class="pasos-wrap">
+      <div class="rail" id="rail" aria-hidden="true"><span class="senal" id="senal"></span></div>
+      <ol class="pasos" id="pasos">
+        <li class="paso rev" style="--i:2" data-p="0.02"><span class="pnodo" aria-hidden="true"></span><div class="num">01</div><h3>Activá desde el panel.</h3><p>Entrás con tu email al <a href="https://axon.growxagency.info/app/login">panel de clientes</a>, autorizás el pago mensual por Mercado Pago y queda registrada tu suscripción.</p></li>
+        <li class="paso rev" style="--i:3" data-p="0.35"><span class="pnodo" aria-hidden="true"></span><div class="num">02</div><h3>Contanos tu negocio.</h3><p>Después del pago, Growxy te guía en el panel para cargar el brief: qué vendés, a quién y qué tiene que lograr la página.</p></li>
+        <li class="paso rev" style="--i:4" data-p="0.68"><span class="pnodo" aria-hidden="true"></span><div class="num">03</div><h3>La armamos y publicamos.</h3><p>Diseñamos tu página, la ves antes de salir y la publicamos en una dirección provisoria; si ya tenés dominio, lo conectamos.</p></li>
+        <li class="paso rev" style="--i:5" data-p="0.97"><span class="pnodo" aria-hidden="true"></span><div class="num">04</div><h3>La mantenemos.</h3><p>Mantenimiento técnico y soporte, incluidos en los USD 45 al mes.</p></li>
+      </ol>
+      </div>
+      <div class="incluye rev" style="--i:6">
+        <span class="lbl">Qué incluye</span>
+        <ul role="list">
+          <li><span class="nodo" aria-hidden="true"></span>Diseño y desarrollo</li>
+          <li><span class="nodo" aria-hidden="true"></span>Publicación y alojamiento</li>
+          <li><span class="nodo" aria-hidden="true"></span>Mantenimiento</li>
+          <li><span class="nodo" aria-hidden="true"></span>Soporte</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 2b · TRABAJOS HECHOS: cinco casos reales ── -->
+<section id="trabajos" class="trabajos" aria-labelledby="h2-trabajos">
+  <div class="ct">
+    <div class="sec-head">
+      <h2 id="h2-trabajos" class="rev" style="--i:1">Páginas que ya están en producción.</h2>
+      <p class="bajada rev" style="--i:2">Cinco trabajos reales, hechos por el mismo equipo que va a hacer tu página.</p>
+    </div>
+    <ul class="trabajos-grid">
+      <li class="trabajo rev" style="--i:0">
+        <img src="/axon/trabajo-gafas-900.webp" width="900" height="563" alt="Captura del catálogo mayorista online de Visión Global Gafas: portada con la colección de armazones y anteojos de sol" loading="lazy" decoding="async" />
+        <div class="tb"><h3>Catálogo mayorista online</h3><p>Visión Global Gafas · Óptica mayorista — Industria Argentina</p></div>
+      </li>
+      <li class="trabajo rev" style="--i:1">
+        <img src="/axon/trabajo-ruach.webp" width="900" height="562" alt="Captura de la web de RUACh Studio, barbería en Buenos Aires con reservas online" loading="lazy" decoding="async" />
+        <div class="tb"><h3>Web premium con reservas online y abono mensual</h3><p>RUACh Studio · Barbería — Buenos Aires</p>
+        <a class="link" href="https://ruachoficial.growxagency.info" target="_blank" rel="noopener">Verlo en vivo <span aria-hidden="true">→</span></a></div>
+      </li>
+      <li class="trabajo rev" style="--i:2">
+        <img src="/axon/trabajo-leticiavalim.webp" width="900" height="562" alt="Captura del sitio de marca personal de Letícia Valim, en español y portugués" loading="lazy" decoding="async" />
+        <div class="tb"><h3>Sitio de marca personal (ES · PT)</h3><p>Letícia Valim · Estética, Cosmética y Consultoría</p>
+        <a class="link" href="https://leticiavalim.growxagency.info/" target="_blank" rel="noopener">Verlo en vivo <span aria-hidden="true">→</span></a></div>
+      </li>
+      <li class="trabajo rev" style="--i:3">
+        <img src="/axon/trabajo-gula-900.webp" width="900" height="563" alt="Captura de la landing de GULA, consultora de gestión y rentabilidad gastronómica" loading="lazy" decoding="async" />
+        <div class="tb"><h3>Landing de consultora</h3><p>GULA · Consultora gastronómica</p></div>
+      </li>
+      <li class="trabajo rev" style="--i:4">
+        <img src="/axon/trabajo-rhema.webp" width="860" height="398" alt="Captura de la tienda online de Rhema, librería cristiana, con catálogo de libros y carrito" loading="lazy" decoding="async" />
+        <div class="tb"><h3>E-commerce de catálogo con carrito</h3><p>Rhema · Librería Cristiana</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── 3 · PROGRAMA DE AFILIADOS (Parte A pública, MIDAS 2026-09-18) ── -->
+<section id="afiliados" class="afiliados" aria-labelledby="h2-afi">
+  <div class="ct">
+    <div class="afi-top">
+      <div>
+        <h2 id="h2-afi" class="rev" style="--i:1">Traé clientes. Cobrá todos los meses.</h2>
+        <p class="bajada rev" style="--i:2;margin-top:16px">Por cada cliente que traés, ganás <strong style="color:var(--marfil)">USD 5 por mes</strong> mientras siga pagando. Vos presentás; nosotros diseñamos, publicamos, mantenemos y cobramos, y te formamos para vender.</p>
+      </div>
+      <div class="afi-card rev" style="--i:3">
+        <p class="cif"><small>USD</small>5</p>
+        <p class="por">por cliente y por mes, mientras el cliente siga pagando. Sin niveles ni letra chica.</p>
+        <p class="niv">Membresía de afiliado: <strong style="color:var(--marfil)">USD 20 por mes</strong>. Incluye capacitaciones, cursos de ventas, asesoramiento de coaching y ventas, y beneficios exclusivos. Con 4 clientes ya está cubierta.</p>
+      </div>
+    </div>
+    <ol class="pasos" aria-label="Cómo funciona el programa">
+      <li class="paso rev on" style="--i:0"><span class="pnodo" aria-hidden="true"></span><div class="num">01</div><h3>Te sumás.</h3><p>Activás tu membresía, recibís tu código y la formación para vender.</p></li>
+      <li class="paso rev on" style="--i:1"><span class="pnodo" aria-hidden="true"></span><div class="num">02</div><h3>Recomendás.</h3><p>Presentás la oferta y nos acercás al cliente; nosotros hacemos la página y la ponemos online.</p></li>
+      <li class="paso rev on" style="--i:2"><span class="pnodo" aria-hidden="true"></span><div class="num">03</div><h3>Cobrás.</h3><p>Cada mes que el cliente paga, vos cobrás USD 5.</p></li>
+    </ol>
+    <div class="afi-cta rev" style="--i:3">
+      <a class="btn btn-o" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20ser%20afiliado%20de%20Axon" target="_blank" rel="noopener">Quiero ser afiliado</a>
+      <p class="nota">Se liquida el día 10 de cada mes por Mercado Pago en pesos o USDT por Binance, con detalle por cliente; mínimo USD 20. Cada combo de e-learning o e-commerce que cerrás suma USD 280 por única vez, y tu primer cliente suma USD 25.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 4 · COMBOS: cuatro tarjetas ── -->
+<section id="combos" class="combos" aria-labelledby="h2-combos">
+  <div class="ct">
+    <div class="sec-head">
+      <h2 id="h2-combos" class="rev" style="--i:1">Si necesitás más que una página.</h2>
+      <p class="bajada rev" style="--i:2">Precio cerrado donde se puede; cotización donde depende del alcance.</p>
+    </div>
+    <ul class="combos-grid">
+      <li class="combo rev" style="--i:0">
+        <svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect x="96" y="120" width="320" height="216" rx="18" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M236 190 L300 228 L236 266 Z" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M96 392 H416" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" opacity=".55"/><path d="M96 392 H300" fill="none" stroke="#C6F24E" stroke-width="3.5" stroke-linecap="round"/><circle cx="300" cy="392" r="20" fill="#C6F24E" opacity=".18" filter="url(#ax-glow)"/><circle class="n" cx="300" cy="392" r="11" fill="#C6F24E"/></svg>
+        <h3>E-learning</h3>
+        <p class="precio">USD 2.800<small>+ USD 40/mes</small></p>
+        <p>Cursos online con área de alumno.</p>
+        <a class="link" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20el%20combo%20E-learning" target="_blank" rel="noopener">Pedir este combo <span aria-hidden="true">→</span></a>
+      </li>
+      <li class="combo rev" style="--i:1">
+        <svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M128 200 H384 L364 400 H148 Z" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M196 200 V172 A60 60 0 0 1 316 172 V200" fill="none" stroke="#C6F24E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="256" cy="300" r="20" fill="#C6F24E" opacity=".18" filter="url(#ax-glow)"/><circle class="n" cx="256" cy="300" r="11" fill="#C6F24E"/><path d="M196 300 H236 M276 300 H316" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" opacity=".55"/></svg>
+        <h3>E-commerce</h3>
+        <p class="precio">USD 2.800<small>+ USD 40/mes</small></p>
+        <p>Tienda con catálogo, carrito y pagos.</p>
+        <a class="link" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20el%20combo%20E-commerce" target="_blank" rel="noopener">Pedir este combo <span aria-hidden="true">→</span></a>
+      </li>
+      <li class="combo rev" style="--i:2">
+        <svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect x="164" y="72" width="184" height="368" rx="30" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M232 104 H280" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" opacity=".55"/><path d="M256 168 V300" fill="none" stroke="#C6F24E" stroke-width="3.5" stroke-linecap="round"/><path d="M216 262 L256 302 L296 262" fill="none" stroke="#C6F24E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="256" cy="372" r="20" fill="#C6F24E" opacity=".18" filter="url(#ax-glow)"/><circle class="n" cx="256" cy="372" r="11" fill="#C6F24E"/></svg>
+        <h3>App descargable</h3>
+        <p class="precio">A cotizar</p>
+        <p>Tu página instalable en el celular, con notificaciones.</p>
+        <a class="link" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20App%20descargable" target="_blank" rel="noopener">Pedir cotización <span aria-hidden="true">→</span></a>
+      </li>
+      <li class="combo rev" style="--i:3">
+        <svg class="ico" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><rect x="88" y="96" width="136" height="104" rx="14" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="288" y="96" width="136" height="104" rx="14" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="188" y="312" width="136" height="104" rx="14" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M224 148 H288" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" opacity=".55"/><path d="M156 200 L256 258 L356 200" fill="none" stroke="#F2F4EC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><path d="M256 258 V312" fill="none" stroke="#C6F24E" stroke-width="3.5" stroke-linecap="round"/><circle cx="256" cy="258" r="20" fill="#C6F24E" opacity=".18" filter="url(#ax-glow)"/><circle class="n" cx="256" cy="258" r="11" fill="#C6F24E"/></svg>
+        <h3>Software a medida</h3>
+        <p class="precio">A cotizar</p>
+        <p>Paneles, sistemas internos y automatizaciones para tu operación.</p>
+        <a class="link" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n%20de%20Software%20a%20medida" target="_blank" rel="noopener">Pedir cotización <span aria-hidden="true">→</span></a>
+      </li>
+    </ul>
+    <p class="nota rev">Los combos con precio incluyen el mantenimiento mensual.</p>
+  </div>
+</section>
+
+<!-- ── 5 · CTA FINAL / CONTACTO ── -->
+<section id="contacto" class="final" aria-labelledby="h2-final">
+  <div class="ct">
+    <h2 id="h2-final" class="rev" style="--i:1">Activá tu web desde el panel de clientes.</h2>
+    <p class="bajada rev" style="--i:2">Entrás con tu email, pagás la suscripción por Mercado Pago y empezás el brief de tu página.</p>
+    <div class="final-cta rev" style="--i:3">
+      <a class="btn btn-p btn-senal" href="https://axon.growxagency.info/app/login?next=/billing/checkout">Pagar con Mercado Pago</a>
+      <a class="btn btn-o" href="https://wa.me/5491169799776?text=Hola%2C%20necesito%20ayuda%20para%20activar%20mi%20web%20en%20AXON" target="_blank" rel="noopener">Necesito ayuda</a>
+    </div>
+    <a class="tel rev" style="--i:4" href="tel:+5491169799776">+54 9 11 6979 9776</a>
+    <a class="afi-link rev" style="--i:5" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20ser%20afiliado%20de%20Axon" target="_blank" rel="noopener">Quiero ser afiliado</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="ct">
+    <p class="fb">AX<b>O</b>N · Software studio</p>
+    <nav aria-label="Legal"><a href="/terminos">Términos</a><a href="/privacidad">Privacidad</a></nav>
+    <p class="eco">Parte del ecosistema <a href="https://growxagency.info/">GROWX</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var desktop = window.matchMedia('(min-width: 761px) and (min-height: 821px)'); /* espejo del @media que quita el pin */
+
+  /* Reveal de bloques: IntersectionObserver al 20 %. Con reduced-motion todo queda visible. */
+  var revs = document.querySelectorAll('.rev');
+  if (reduced || !('IntersectionObserver' in window)) {
+    for (var i = 0; i < revs.length; i++) revs[i].classList.add('in');
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.2, rootMargin: '0px 0px -5% 0px' });
+    for (var j = 0; j < revs.length; j++) io.observe(revs[j]);
+  }
+
+  /* Motion de scroll estilo Awwwards: parallax, tilt sutil y profundidad por sección. */
+  var hero = document.querySelector('.hero');
+  var heroPic = document.querySelector('.hero-pic');
+  var heroCopy = document.querySelector('.hero .ct');
+  var depthEls = Array.prototype.slice.call(document.querySelectorAll('.trabajo,.combo,.afi-card,.paso'));
+  var motionRaf = null;
+  function clamp(n,min,max){ return Math.max(min, Math.min(max, n)); }
+  function renderMotion(){
+    motionRaf = null;
+    if (reduced) return;
+    var vh = window.innerHeight || 1;
+    if (hero && heroPic && heroCopy) {
+      var hr = hero.getBoundingClientRect();
+      var hp = clamp((0 - hr.top) / Math.max(1, hr.height), 0, 1);
+      heroPic.style.setProperty('--hero-y', (hp * -46).toFixed(2) + 'px');
+      heroPic.style.setProperty('--hero-x', (hp * -18).toFixed(2) + 'px');
+      heroPic.style.setProperty('--hero-scale', (1 + hp * .035).toFixed(4));
+      heroCopy.style.setProperty('--copy-y', (hp * 30).toFixed(2) + 'px');
+      heroCopy.style.setProperty('--copy-o', (1 - hp * .24).toFixed(3));
+    }
+    for (var m = 0; m < depthEls.length; m++) {
+      var el = depthEls[m], r = el.getBoundingClientRect();
+      var mid = (r.top + r.height * .5) / vh;
+      var dist = clamp(mid - .5, -.7, .7);
+      el.style.setProperty('--depth-y', (dist * -16).toFixed(2) + 'px');
+      el.style.setProperty('--depth-s', (1 - Math.abs(dist) * .018).toFixed(4));
+      el.style.setProperty('--step-y', (dist * -10).toFixed(2) + 'px');
+    }
+  }
+  function queueMotion(){ if (!motionRaf) motionRaf = requestAnimationFrame(renderMotion); }
+  window.addEventListener('scroll', queueMotion, { passive:true });
+  window.addEventListener('resize', queueMotion, { passive:true });
+  queueMotion();
+
+  /* Escena "cómo funciona": la señal lima recorre los cuatro pasos.
+     Escritorio: pinned (sticky en 260 vh), un solo rAF con lerp 0,12 que lee scrollY y
+     escribe stroke-dashoffset. Móvil: sin pinned; cada paso se enciende por IO. */
+  var pin = document.getElementById('como-funciona');
+  var senal = document.getElementById('senal');
+  var pasosEl = document.getElementById('pasos');
+  if (!pin || !senal || !pasosEl) return;
+  var pasos = Array.prototype.slice.call(pasosEl.querySelectorAll('.paso'));
+  var umbral = pasos.map(function(p){ return parseFloat(p.getAttribute('data-p')) || 0; });
+  var rail = document.getElementById('rail');
+  function pintar(p){ senal.style.transform = 'scaleX(' + p + ')'; }
+
+  function encender(p){
+    for (var k = 0; k < pasos.length; k++) pasos[k].classList.toggle('on', p >= umbral[k]);
+  }
+  function ajustarRail(){
+    // el riel va del centro del primer nodo al centro del último
+    var a = pasos[0].getBoundingClientRect(), b = pasos[pasos.length-1].getBoundingClientRect(), g = pasosEl.getBoundingClientRect();
+    rail.style.left = (a.left - g.left + 6) + 'px';
+    rail.style.width = Math.max(0, (b.left - a.left)) + 'px';
+  }
+
+  if (reduced) { pintar(1); encender(1); ajustarRail(); window.addEventListener('resize', ajustarRail); return; }
+
+  var cur = 0, target = 0, raf = null, movil = !desktop.matches;
+  function medir(){
+    var r = pin.getBoundingClientRect();
+    var total = pin.offsetHeight - window.innerHeight;
+    target = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+  }
+  function tick(){
+    cur += (target - cur) * 0.12;
+    if (Math.abs(target - cur) < 0.0015) cur = target;
+    pintar(cur);
+    encender(cur);
+    raf = (cur !== target) ? requestAnimationFrame(tick) : null;
+  }
+  function onScroll(){ if (movil) return; medir(); if (!raf) raf = requestAnimationFrame(tick); }
+
+  var ioPasos = null;
+  function modoMovil(){
+    movil = true;
+    if (raf) { cancelAnimationFrame(raf); raf = null; }
+    pintar(1); ajustarRail();
+    if (!('IntersectionObserver' in window)) { encender(1); return; }
+    pasos.forEach(function(p){ p.classList.remove('on'); });
+    ioPasos = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('on'); ioPasos.unobserve(e.target); } });
+    }, { threshold: 0.4 });
+    pasos.forEach(function(p){ ioPasos.observe(p); });
+  }
+  function modoEscritorio(){
+    movil = false;
+    if (ioPasos) { ioPasos.disconnect(); ioPasos = null; }
+    ajustarRail(); cur = 0; onScroll();
+  }
+  function aplicarModo(){ if (desktop.matches) modoEscritorio(); else modoMovil(); }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function(){ ajustarRail(); onScroll(); }, { passive: true });
+  if (desktop.addEventListener) desktop.addEventListener('change', aplicarModo); else desktop.addListener(aplicarModo);
+  aplicarModo();
+})();
+</script>
+<script src="/gx-auto-update.js" defer></script>
+<script src="/gx-nav.js" defer></script>
+</body>
+</html>
+
+
