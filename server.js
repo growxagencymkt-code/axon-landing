@@ -27,6 +27,7 @@ app.get(['/app', '/app/*'], (req, res) => {
   res.redirect(302, appBase + targetPath);
 });
 app.get(['/axon', '/axon/'], (_req, res) => res.redirect(301, '/'));
+app.get(['/afiliados', '/afiliados.html'], (_req, res) => res.sendFile(path.join(__dirname, 'afiliados.html')));
 app.get('*', (_req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 app.listen(port, () => {

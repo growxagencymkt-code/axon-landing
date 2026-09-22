@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style id="gx-boot-inline">body{padding-top:60px!important}</style>
+<script>document.documentElement.classList.add('axon-solo');</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Programa de afiliados — AXON | GROWX</title>
+<meta name="description" content="Recomendá AXON y ganá USD 5 por mes por cada cliente que sigue pagando. Membresía USD 20/mes con formación incluida." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0D0D10" />
+<link rel="canonical" href="https://axonsoftware.com.ar/afiliados.html" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@400;600&family=Chivo+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* ── AXON · afiliados · mismos tokens que index.html (dirección de arte NOVA 2026-09-18) ── */
+  :root{
+    --carbon:#0D0D10; --grafito:#181B22; --linea:rgba(242,244,236,.10);
+    --marfil:#F2F4EC; --ceniza:#A9AD9C; --apagado:#7E8273;
+    --lima:#C6F24E; --lima-oscura:#8FCB00; --tinta-sobre-lima:#0D0D10; --growx-cyan:#37B6C7;
+    --dur-micro:200ms; --dur-reveal:560ms; --ease:cubic-bezier(.2,.7,.2,1);
+    --gutter:clamp(16px,4vw,48px);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:auto;overflow-x:clip}
+  body{font-family:'Montserrat',system-ui,sans-serif;font-size:16px;line-height:1.6;background:var(--carbon);color:var(--marfil);overflow-x:clip;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Poppins',system-ui,sans-serif;text-wrap:balance;hyphens:none}
+  h1{font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1.04;letter-spacing:-.03em}
+  h2{font-weight:600;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-.025em}
+  h3{font-weight:600;font-size:24px;line-height:1.2;letter-spacing:-.01em}
+  p{max-width:34rem}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--lima);outline-offset:3px;border-radius:4px}
+  .ct{width:min(1200px,100% - 2*var(--gutter));margin:0 auto}
+  section{padding:clamp(80px,10vw,144px) 0;position:relative}
+  .bajada{font-size:clamp(17px,1.3vw,19px);line-height:1.6;color:var(--ceniza)}
+  .nota{font-size:14px;line-height:1.5;color:var(--ceniza)}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Poppins',system-ui,sans-serif;font-weight:600;font-size:16px;line-height:1;border-radius:10px;padding:17px 28px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color var(--dur-micro) var(--ease),border-color var(--dur-micro) var(--ease),box-shadow var(--dur-micro) var(--ease),color var(--dur-micro) var(--ease)}
+  .btn-p{background:var(--lima);color:var(--tinta-sobre-lima);border-color:var(--lima)}
+  .btn-p:hover{background:var(--lima-oscura);border-color:var(--lima-oscura);box-shadow:0 8px 24px rgba(198,242,78,.35)}
+  .btn-o{background:transparent;color:var(--marfil);border-color:rgba(198,242,78,.45)}
+  .btn-o:hover{border-color:var(--lima);color:var(--lima)}
+
+  .rev{opacity:0;transform:translateY(16px);transition:opacity var(--dur-reveal) var(--ease),transform var(--dur-reveal) var(--ease);transition-delay:calc(var(--i,0)*60ms)}
+  .rev.in{opacity:1;transform:none}
+
+  #axon-solo-bar{display:flex;position:fixed;top:0;left:0;right:0;z-index:1000;height:60px;align-items:center;gap:20px;padding:0 var(--gutter);background:rgba(13,13,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--linea)}
+  .axb-brand{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:19px;letter-spacing:.06em;color:var(--marfil);white-space:nowrap;text-decoration:none}
+  .axb-brand b{color:var(--lima);font-weight:700}
+  .axb-growx{font-size:14px;font-weight:600;color:var(--ceniza);text-decoration:none;white-space:nowrap;margin-left:auto}
+  .axb-growx:hover{color:var(--marfil)}
+
+  .cab{text-align:center;border-bottom:1px solid var(--linea);padding-top:clamp(120px,12vw,160px)}
+  .cab .bajada{margin:16px auto 0}
+
+  .afiliados{background:var(--grafito);border-bottom:1px solid var(--linea)}
+  .afi-top{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:start;margin-bottom:clamp(48px,6vw,80px)}
+  .afi-card{background:var(--carbon);border:1px solid var(--linea);border-radius:16px;padding:32px}
+  .afi-card .cif{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:clamp(48px,5vw,72px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--lima)}
+  .afi-card .cif small{font-size:clamp(18px,1.6vw,24px);font-weight:600;letter-spacing:.04em;color:var(--ceniza);margin-right:10px;vertical-align:baseline}
+  .afi-card .por{margin-top:12px;color:var(--marfil);font-weight:600}
+  .afi-card .niv{margin-top:20px;padding-top:20px;border-top:1px solid var(--linea);color:var(--ceniza);font-size:15px}
+  .pasos{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;list-style:none}
+  .paso .num{font-family:'Chivo Mono',ui-monospace,monospace;font-weight:500;font-size:13px;letter-spacing:.08em;color:var(--lima);margin-bottom:12px}
+  .paso h3{margin-bottom:10px}
+  .paso p{font-size:16px;color:var(--ceniza)}
+  .afi-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;margin-top:clamp(40px,5vw,64px)}
+  .afi-cta .nota{max-width:40rem}
+  @media(max-width:900px){.afi-top{grid-template-columns:1fr;gap:32px}}
+  @media(max-width:760px){.pasos{grid-template-columns:1fr}.afi-card{padding:24px}.afi-cta .btn{width:100%}}
+
+  footer{border-top:1px solid var(--linea);padding:32px 0}
+  footer .ct{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;font-size:14px;color:var(--ceniza)}
+  footer .fb{font-family:'Chivo Mono',ui-monospace,monospace;font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ceniza)}
+  footer .fb b{color:var(--lima);font-weight:500}
+  footer nav{display:flex;gap:20px}
+  footer nav a{color:var(--ceniza);text-decoration:none}
+  footer nav a:hover{color:var(--marfil);text-decoration:underline;text-underline-offset:4px}
+  footer .eco{color:var(--ceniza)}
+  footer .eco a{color:var(--growx-cyan);font-weight:600;text-decoration:none}
+  @media(max-width:760px){footer .ct{flex-direction:column;align-items:flex-start}}
+
+  @media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div id="axon-solo-bar" role="banner">
+  <a class="axb-brand" href="/" aria-label="Volver a AXON">AX<b>O</b>N</a>
+  <a class="axb-growx" href="/">← Volver a AXON</a>
+</div>
+
+<main id="top">
+<section class="cab">
+  <div class="ct">
+    <h1 class="rev in">Traé clientes. Cobrá todos los meses.</h1>
+    <p class="bajada rev in">Programa de afiliados de AXON, para quien ya recomienda: no es parte de la oferta que ve tu cliente final.</p>
+  </div>
+</section>
+
+<section id="afiliados" class="afiliados" aria-labelledby="h2-afi">
+  <div class="ct">
+    <div class="afi-top">
+      <div>
+        <h2 id="h2-afi" class="rev in">Cómo funciona</h2>
+        <p class="bajada rev in" style="margin-top:16px">Por cada cliente que traés, ganás <strong style="color:var(--marfil)">USD 5 por mes</strong> mientras siga pagando. Vos presentás; nosotros diseñamos, publicamos, mantenemos y cobramos, y te formamos para vender.</p>
+      </div>
+      <div class="afi-card rev in">
+        <p class="cif"><small>USD</small>5</p>
+        <p class="por">por cliente y por mes, mientras el cliente siga pagando. Sin niveles ni letra chica.</p>
+        <p class="niv">Membresía de afiliado: <strong style="color:var(--marfil)">USD 20 por mes</strong>. Incluye capacitaciones, cursos de ventas, asesoramiento de coaching y ventas, y beneficios exclusivos. Con 4 clientes ya está cubierta.</p>
+      </div>
+    </div>
+    <ol class="pasos" aria-label="Cómo funciona el programa">
+      <li class="paso rev in"><div class="num">01</div><h3>Te sumás.</h3><p>Activás tu membresía, recibís tu código y la formación para vender.</p></li>
+      <li class="paso rev in"><div class="num">02</div><h3>Recomendás.</h3><p>Presentás la oferta y nos acercás al cliente; nosotros hacemos la página y la ponemos online.</p></li>
+      <li class="paso rev in"><div class="num">03</div><h3>Cobrás.</h3><p>Cada mes que el cliente paga, vos cobrás USD 5.</p></li>
+    </ol>
+    <div class="afi-cta rev in">
+      <a class="btn btn-o" href="https://wa.me/5491169799776?text=Hola%2C%20quiero%20ser%20afiliado%20de%20Axon" target="_blank" rel="noopener">Quiero ser afiliado</a>
+      <p class="nota">Se liquida el día 10 de cada mes por Mercado Pago en pesos o USDT por Binance, con detalle por cliente; mínimo USD 20. Cada combo de e-learning o e-commerce que cerrás suma USD 280 por única vez, y tu primer cliente suma USD 25.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="ct">
+    <p class="fb">AX<b>O</b>N · Software studio</p>
+    <nav aria-label="Legal"><a href="/">Volver a AXON</a><a href="/terminos">Términos</a><a href="/privacidad">Privacidad</a></nav>
+    <p class="eco">Parte del ecosistema <a href="https://growxagency.info/">GROWX</a></p>
+  </div>
+</footer>
+</body>
+</html>
